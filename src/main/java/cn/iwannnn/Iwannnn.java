@@ -1,8 +1,5 @@
 package cn.iwannnn;
 
-import cn.iwannnn.first_food.*;
-import cn.iwannnn.first_item.*;
-import cn.iwannnn.first_weapon.*;
 import java.util.stream.Collectors;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -24,8 +21,9 @@ import org.apache.logging.log4j.Logger;
 public class Iwannnn {
     public Iwannnn() {
         // 注册进Mod总线
-        FirstItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        FirstFoodRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        FirstWeaponRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_item.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_food.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_weapon.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_block.BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }

@@ -1,12 +1,12 @@
 package cn.iwannnn.first_weapon;
 
-import cn.iwannnn.first_item.FirstItemRegistry;
+import cn.iwannnn.first_item.ItemRegistry;
 import cn.iwannnn.group.ModGroup;
-
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
+
 
 public class FirstWeapon extends SwordItem {
     private static IItemTier itemTier = new IItemTier() {
@@ -37,12 +37,11 @@ public class FirstWeapon extends SwordItem {
 
         @Override
         public Ingredient getRepairIngredient() {
-            return Ingredient.of(FirstItemRegistry.firstItem.get());
+            return Ingredient.of(ItemRegistry.firstItem.get());
         }
     };
 
     public FirstWeapon() {
         super(itemTier, 3, -2.4F, new Item.Properties().tab(ModGroup.firstGroup));
     }
-
 }
