@@ -8,5 +8,5 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "iwannnn");
-    public static final RegistryObject<Item> firstWrapon = ITEMS.register("first_weapon", () -> { return new FirstWeapon(); });
+    public static final RegistryObject<Item> firstWeapon = ITEMS.register("first_weapon", () -> { return new FirstWeapon(); });
 }
