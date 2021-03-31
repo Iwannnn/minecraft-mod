@@ -26,5 +26,7 @@ public class Iwannnn {
         cn.iwannnn.first_weapon.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         cn.iwannnn.first_block.BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         cn.iwannnn.first_block.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_block_state.BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        cn.iwannnn.first_block_state.ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
