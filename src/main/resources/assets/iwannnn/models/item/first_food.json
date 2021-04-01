@@ -1,9 +1,9 @@
 {
     "credit": "Made with Blockbench",
     "textures": {
-        "0": "iwannnn:item/first_food_bar",
-        "1": "iwannnn:item/first_food_head",
-        "particle": "iwannnn:item/first_food_head"
+        "0": "iwannnn:item/first_food/first_food_bar",
+        "1": "iwannnn:item/first_food/first_food_head",
+        "particle": "iwannnn:item/first_food/first_food_head"
     },
     "elements": [
         {
